@@ -1,0 +1,96 @@
+/* CSS HEX 
+--cg-blue: #227c9dff;
+--light-sea-green: #17c3b2ff;
+--maximum-yellow-red: #ffcb77ff;
+--floral-white: #fef9efff;
+--light-coral: #fe6d73ff;
+*/
+body {
+    background-color: #fef9efff;
+}
+
+header {
+    background-color: #ffcb77ff;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav a{
+    background-color: #fe6d73ff;
+    color: #227c9dff;
+    padding: 8px;
+}
+
+header nav a[href="#"], header nav a:hover {
+    color: #fe6d73ff;
+    background-color: #227c9dff;
+}
+
+main {
+    width: 100%;
+    padding: 0 0 5px;
+    margin: 0;
+}
+
+#main-content {
+    width: 70%; 
+    padding: 5px;
+    background-color: pink;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section { 
+    height: 50px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #17c3b2ff;
+}
+
+#side-content {
+    width: 30%; 
+    background-color: gray;
+}
+
+#side-content .flex-container {
+    flex-flow: column;
+}
+
+footer {
+    background-color: #ffcb77ff;
+    width: 100%;
+}
+
+footer div {
+    padding: 10px;
+    margin: 0;
+}
+
+footer img {
+    width: 144px;
+    height: 113px;   
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.float-left {
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    #main-content {
+        width: 100%;
+    }
+
+    #side-content {
+        width: 100%;
+    }
+}
+
+
