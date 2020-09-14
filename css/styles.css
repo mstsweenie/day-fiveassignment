@@ -6,19 +6,24 @@
 --light-coral: #fe6d73ff;
 */
 body {
-    background-color: #fef9efff;
+    background-color: #fff;
 }
 
 header {
     background-color: #ffcb77ff;
-    padding: 10px;
-    text-align: center;
+    width: 100%;
+    float: left;
 }
 
-header nav a{
+header nav a {
     background-color: #fe6d73ff;
     color: #227c9dff;
-    padding: 8px;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 0;
+    width: 33.3%;
+    float: left;
+    text-align: center;
 }
 
 header nav a[href="#"], header nav a:hover {
@@ -26,9 +31,14 @@ header nav a[href="#"], header nav a:hover {
     background-color: #227c9dff;
 }
 
+main h1 {
+    line-height: 0;
+    font-size: 0;
+}
+
 main {
     width: 100%;
-    padding: 0 0 5px;
+    padding: 0;
     margin: 0;
 }
 
@@ -37,14 +47,23 @@ main {
     padding: 5px;
     background-color: pink;
 }
-
-.flex-container {
+.vContainer{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+.hContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+}
+
+div#main-section {
+    padding: 5px;
 }
 
 section { 
-    height: 50px;
+    min-height: 75px;
     padding: 5px;
     border: 1px solid black;
     background-color: #17c3b2ff;
@@ -55,9 +74,9 @@ section {
     background-color: gray;
 }
 
-#side-content .flex-container {
+ /*#side-content .flex-container {
     flex-flow: column;
-}
+}*/
 
 footer {
     background-color: #ffcb77ff;
@@ -71,7 +90,7 @@ footer div {
 
 footer img {
     width: 144px;
-    height: 113px;   
+    height: auto;   
 }
 
 footer ul {
@@ -83,12 +102,32 @@ footer ul {
     float: left;
 }
 
+#item-menu  div { 
+    border: 3px solid black;
+    background-color: #fe6d73ff;
+    color: #227c9dff;;
+}
+
+.item-detail {
+    background-color: #17c3b2ff;
+    border: 5px solid #ffcb77ff;
+}
+
+.item-detail div {
+    float: left;
+    margin-right: 10px;
+}
+
 @media screen and (max-width: 600px) {
     #main-content {
         width: 100%;
     }
 
     #side-content {
+        width: 100%;
+    }
+
+    header nav a {
         width: 100%;
     }
 }
